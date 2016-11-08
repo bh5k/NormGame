@@ -1,0 +1,18 @@
+{"questions":[
+	{
+		"question":"Where is the bathroom?", 
+		"answers":[
+			"Across the hall",
+			"Across the street", 
+			"Across town"
+		]
+	},
+	{
+		"question":"How often should you try to get face time with the account managers?", 
+		"answers":[
+			"Once or twice a day", 
+			"Once or twice a week", 
+			"Once or twice a decade"
+		]
+	}
+]}
