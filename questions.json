@@ -5,7 +5,11 @@
 			"Across the hall",
 			"Across the street", 
 			"Across town"
-		]
+		], 
+		"correctAnswer":0,
+		"correctMessage":"Right! Good job!", 
+		"incorrectMessage":"Nope, not right!", 
+		"imageURL":"/images/image1.jpg"
 	},
 	{
 		"question":"How often should you try to get face time with the account managers?", 
@@ -13,6 +17,10 @@
 			"Once or twice a day", 
 			"Once or twice a week", 
 			"Once or twice a decade"
-		]
+		], 
+		"correctAnswer":1,
+		"correctMessage":"Right! Good job!", 
+		"incorrectMessage":"Nope, not right!", 
+		"imageURL":""
 	}
 ]}

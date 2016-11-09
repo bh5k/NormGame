@@ -1,1 +1,1 @@
-angular.module("normGame", []);
+angular.module("normGame", ['ngAnimate']);

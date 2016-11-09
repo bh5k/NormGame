@@ -1,0 +1,16 @@
+<div class="question">
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" ng-repeat="answer in $ctrl.info.answers">
+			<div class="card" ng-click="$ctrl.selection=answer" ng-class="{selected: answer==$ctrl.selection}">
+				<div class="num">{{$index}}</div>
+				<div class="text">{{answer}}</div>
+			</div>
+		</div>
+	</div>
+	{{$ctrl.results}}
+	<button class="btn" ng-click="$ctrl.checkAnswer()" ng-class="{blue: $ctrl.enableGo}">Go!</button>
+	<button class="btn" ng-click="$ctrl.nextQuestion()" ng-class="{blue: $ctrl.enableNext}">Next Question</button>
+</div>

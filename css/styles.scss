@@ -1,0 +1,57 @@
+$blue: #3498db;
+$blue-darker: #2980b9;
+$slate: #34495e;
+
+body {
+	font-family: "Lato", sans-serif;
+	background: #ccc;
+}
+
+.round-border {
+}
+
+.card {
+	margin: 0;
+	text-align: center;
+	background: white;
+	border-radius: 5px 20px;
+	cursor: pointer;
+	transition: all .2s;
+	
+	&.selected {
+		background: $slate;
+		color: white;
+	}
+	&::after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+	.num {
+		font-size: 40px;
+		width: 50px;
+		float: left;
+		background: $blue;
+		color: white;
+		border-radius: 5px 20px;
+	}
+	.text {
+		width: calc(100% - 50px);
+		float: left;
+		padding: 10px;
+		font-size: 18px;
+	}
+}
+
+.btn {
+	outline: none !important;
+	transition: all .5s;
+
+	&.blue {
+		background-color: $blue;
+		color: white;
+		&:hover {
+			background-color: $blue-darker;
+		}
+	}
+}

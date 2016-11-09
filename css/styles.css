@@ -1,0 +1,41 @@
+body {
+  font-family: "Lato", sans-serif;
+  background: #ccc; }
+
+.card {
+  margin: 0;
+  text-align: center;
+  background: white;
+  border-radius: 5px 20px;
+  cursor: pointer;
+  transition: all .2s; }
+  .card.selected {
+    background: #34495e;
+    color: white; }
+  .card::after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .card .num {
+    font-size: 40px;
+    width: 50px;
+    float: left;
+    background: #3498db;
+    color: white;
+    border-radius: 5px 20px; }
+  .card .text {
+    width: calc(100% - 50px);
+    float: left;
+    padding: 10px;
+    font-size: 18px; }
+
+.btn {
+  outline: none !important;
+  transition: all .5s; }
+  .btn.blue {
+    background-color: #3498db;
+    color: white; }
+    .btn.blue:hover {
+      background-color: #2980b9; }
+
+/*# sourceMappingURL=styles.css.map */
