@@ -42,10 +42,8 @@ p {
 	background: rgba(0,0,0,.8);
 	cursor: pointer;
 	opacity: 1;
+	transition: all .3s;
 
-	&.ng-hide-add, &.ng-hide-remove {
-		transition: all .3s;
-	}
 	&.ng-hide {
 		opacity: 0;
 	}
@@ -70,7 +68,7 @@ p {
 }
 
 welcome, results {
-	height: 100vh;
+	min-height: 100vh;
 	display: block;
 	width: 100%;
 	position: relative;
@@ -121,6 +119,15 @@ results {
 			color: white;
 		}
 	}
+	.feedback {
+		opacity: 1; 
+		&.ng-hide-remove {
+			transition: all .3s;
+		}
+		&.ng-hide {
+			opacity: 0;
+		}
+	}
 	.correct {
 		color: #2ecc71;
 	}
@@ -166,8 +173,35 @@ results {
 	}
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
 	.slide {
-		height: calc(100vh - 235px);
+		min-height: calc(100vh - 235px);
+	}
+	welcome, results, .slide {
+		padding: 10px 0 60px;
+	}
+	.glass {
+		position: relative;
+		top: initial;
+		left: initial;
+		transform: initial;
+	}
+	.slide {
+		height: auto;
+	}
+}
+
+@media (max-height: 440px) {
+	welcome, results, .slide {
+		padding: 10px 0 60px;
+	}
+	.glass {
+		position: relative;
+		top: initial;
+		left: initial;
+		transform: initial;
+	}
+	.slide {
+		height: auto;
 	}
 }

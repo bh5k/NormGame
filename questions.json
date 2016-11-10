@@ -1,14 +1,14 @@
 {"questions":[
 	{
-		"question":"Where is the bathroom?", 
+		"question":"\"We have fun while maintaining the right sense of _____; we have a work/life balance.\"", 
 		"answers":[
-			"Across the hall",
-			"Across the street", 
-			"Across town"
+			"Responsibility",
+			"Urgency", 
+			"territoriality"
 		], 
-		"correctAnswer":0,
-		"correctMessage":"Right! Good job! This is really important to know because otherwise who knows what'd happen when you needed to go.", 
-		"incorrectMessage":"Nope, not right! The bathrooms are actually conveniently located across the hall.", 
+		"correctAnswer":1,
+		"correctMessage":"Right! A well balanced sense of urgency leads to tasks getting done on time while feeling great.", 
+		"incorrectMessage":"Nope, incorrect! The right sense of \"Urgency\" is how the company norm describes how we complete tasks.", 
 		"imageURL":"/images/image1.jpg"
 	},
 	{
@@ -22,5 +22,101 @@
 		"correctMessage":"Right! Good job! Although some of our meetings might start with high fives all around, the norm is actually that they start on time.", 
 		"incorrectMessage":"Nope, not right! Although some of our meetings might start with high fives all around, the norm is actually that they start on time.", 
 		"imageURL":"/images/image2.jpg"
+	},
+	{
+		"question":"\"We voice our opinion _____ the meeting\"", 
+		"answers":[
+			"During", 
+			"After", 
+			"While doing a handstand in"
+		], 
+		"correctAnswer":0,
+		"correctMessage":"Right, voicing our opinion during the meeting allows for optimal feedback.", 
+		"incorrectMessage":"Not right, voicing our opinion correctly during the meeting allows for optimal feedback.", 
+		"imageURL":"/images/image3.jpg"
+	},
+	{
+		"question":"\"We openly challenge, but _____ other's views; we are open-minded\"", 
+		"answers":[
+			"Criticize", 
+			"Ignore", 
+			"Value"
+		], 
+		"correctAnswer":2,
+		"correctMessage":"Yes, by valuing other's views we allow ourselves to grow to see things in new ways.", 
+		"incorrectMessage":"No, by actually valuing other's views we allow ourselves to grow to see things in new ways.", 
+		"imageURL":"/images/image4.jpg"
+	},
+	{
+		"question":"\"We hold ourselves and others _____\"", 
+		"answers":[
+			"At bay", 
+			"Accountable", 
+			"At arms length to avoid an HR violation"
+		], 
+		"correctAnswer":1,
+		"correctMessage":"Accountable is correct!", 
+		"incorrectMessage":"That is not correct, we actually hold everyone including ourselves accountable.", 
+		"imageURL":"/images/image5.jpg"
+	},
+	{
+		"question":"\"Our company is the _____ team\"", 
+		"answers":[
+			"#1", 
+			"#2", 
+			"Last place"
+		], 
+		"correctAnswer":0,
+		"correctMessage":"One would have to try really hard to get this one wrong.", 
+		"incorrectMessage":"You tried really hard to get this one wrong.", 
+		"imageURL":"/images/image6.jpg"
+	},
+	{
+		"question":"\"We _____ mistakes\"", 
+		"answers":[
+			"Debrief on", 
+			"Sleep on", 
+			"Cover up"
+		], 
+		"correctAnswer":0,
+		"correctMessage":"Right, we debrief on mistakes to learn to do better in the future.", 
+		"incorrectMessage":"No, we actually debrief on mistakes to learn to do better in the future.", 
+		"imageURL":"/images/image7.jpg"
+	},
+	{
+		"question":"We can participate fully and be more in the moment by doing what?", 
+		"answers":[
+			"Meditating daily", 
+			"Avoiding side conversations", 
+			"Paying very special attention to Joe's yo-yo"
+		], 
+		"correctAnswer":1,
+		"correctMessage":"Yes, this is mentioned specifically in the norms.", 
+		"incorrectMessage":"No, that isn't mentioned in the norms.", 
+		"imageURL":"/images/image8.jpg"
+	},
+	{
+		"question":"\"Disagreement is _____\"", 
+		"answers":[
+			"Fine if you keep it to yourself", 
+			"Not tolerated", 
+			"OK"
+		], 
+		"correctAnswer":2,
+		"correctMessage":"Yes, disagreement is a sign of engagement, as long as it is presented appropriately.", 
+		"incorrectMessage":"No, disagreement is OK, as long as it is presented approrpiately.", 
+		"imageURL":"/images/image9.jpg"
+	},
+	{
+		"question":"Every member has the _____ and _____ to call out \"non-norm\" and \"norm\" behavior", 
+		"answers":[
+			"Right, obligation", 
+			"Tendency, temptation", 
+			"Desire, internal moral dilemma"
+		], 
+		"correctAnswer":0,
+		"correctMessage":"Right! Congratulations, you're done with the quiz now!", 
+		"incorrectMessage":"Nope! Actually, it's the right and obligation to call it out.", 
+		"imageURL":"/images/image10.jpg"
 	}
 ]}

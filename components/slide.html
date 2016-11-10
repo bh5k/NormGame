@@ -1,8 +1,8 @@
 <div class="slide" style="background: url('{{$ctrl.info.imageURL}}') center; background-size: cover;">
 	<div class="glass">
-		<h2>Question {{$ctrl.count}}</h2>
+		<h1>Question {{$ctrl.count}}</h1>
 		<p>{{$ctrl.info.question}}</p>
-		<div ng-show="$ctrl.showResults">
+		<div ng-show="$ctrl.showResults" class="feedback ng-hide">
 			<h2 class="{{$ctrl.result}}">{{$ctrl.result}}!</h2>
 			<p>{{$ctrl.feedback}}</p>
 			<button class="btn blue" ng-click="$ctrl.nextQuestion()">{{$ctrl.nextText}}</button>
@@ -23,6 +23,6 @@
 	</div>
 </div>
 
-<div class="custom-modal" ng-click="$ctrl.modal=false" ng-show="$ctrl.modal">
+<div class="custom-modal ng-hide" ng-click="$ctrl.modal=false" ng-show="$ctrl.modal">
 	<img src="{{$ctrl.info.imageURL}}" />
 </div>

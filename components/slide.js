@@ -7,13 +7,13 @@ function slideController($scope, $http, $location, $rootScope) {
 	$http.get("/questions.json")
 		.then(function(response){
 			questions = response.data.questions;
+			$rootScope.numQuestions = questions.length;
 			newQuestion();
 		});
 
 	ctrl.selection = "";
 	ctrl.nextText = "Next Question";
 	$rootScope.score = 0;
-
 	$scope.$watch(function(){
 		return ctrl.selection;
 	}, function(){
