@@ -1,2 +1,16 @@
-<h1>The Norm Game</h1>
-<h2>Welcome</h2>
+<div class="glass">
+	<h1>The Norm Game</h1>
+	<p>Welcome! This game will test your knowledge of STG norms.</p>
+	<p>As a hint, below is the vision statement. With it in mind, I have no doubt that you will succeed in showing off your knowledge of the company's norms.</p>
+
+	<h2 style="margin-top: 40px;">Vision Statement</h2>
+	<p>STG is a culture-driven organization that drives growth by supporting and empowering its employees. We provide the best to our clients and redefine the standard of a consulting partnership.</p>
+
+	<a href="/quiz" class="btn blue">Start the Quiz!</a>
+</div>
+
+<img src="/images/camera.svg" ng-click="$ctrl.modal=true"  class="camera" />
+
+<div class="custom-modal" ng-click="$ctrl.modal=false" ng-show="$ctrl.modal">
+	<img src="/images/welcome.jpg" />
+</div>

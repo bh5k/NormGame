@@ -1,5 +1,4 @@
 function welcomeController() {
-	
 }
 
 angular.module('normGame').component('welcome', {

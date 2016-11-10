@@ -1,16 +1,28 @@
-<div class="question">
+<div class="slide" style="background: url('{{$ctrl.info.imageURL}}') center; background-size: cover;">
+	<div class="glass">
+		<h2>Question {{$ctrl.count}}</h2>
+		<p>{{$ctrl.info.question}}</p>
+		<div ng-show="$ctrl.showResults">
+			<h2 class="{{$ctrl.result}}">{{$ctrl.result}}!</h2>
+			<p>{{$ctrl.feedback}}</p>
+			<button class="btn blue" ng-click="$ctrl.nextQuestion()">{{$ctrl.nextText}}</button>
+		</div>
+	</div>
+
+	<img src="/images/camera.svg" ng-click="$ctrl.modal=true"  class="camera" />
 </div>
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-4" ng-repeat="answer in $ctrl.info.answers">
 			<div class="card" ng-click="$ctrl.selection=answer" ng-class="{selected: answer==$ctrl.selection}">
-				<div class="num">{{$index}}</div>
-				<div class="text">{{answer}}</div>
+				<div class="num">{{$index+1}}</div>
+				<div class="text"><p>{{answer}}</p></div>
 			</div>
 		</div>
 	</div>
-	{{$ctrl.results}}
-	<button class="btn" ng-click="$ctrl.checkAnswer()" ng-class="{blue: $ctrl.enableGo}">Go!</button>
-	<button class="btn" ng-click="$ctrl.nextQuestion()" ng-class="{blue: $ctrl.enableNext}">Next Question</button>
+</div>
+
+<div class="custom-modal" ng-click="$ctrl.modal=false" ng-show="$ctrl.modal">
+	<img src="{{$ctrl.info.imageURL}}" />
 </div>

@@ -7,20 +7,20 @@
 			"Across town"
 		], 
 		"correctAnswer":0,
-		"correctMessage":"Right! Good job!", 
-		"incorrectMessage":"Nope, not right!", 
+		"correctMessage":"Right! Good job! This is really important to know because otherwise who knows what'd happen when you needed to go.", 
+		"incorrectMessage":"Nope, not right! The bathrooms are actually conveniently located across the hall.", 
 		"imageURL":"/images/image1.jpg"
 	},
 	{
-		"question":"How often should you try to get face time with the account managers?", 
+		"question":"How do our meetings start and end?", 
 		"answers":[
-			"Once or twice a day", 
-			"Once or twice a week", 
-			"Once or twice a decade"
+			"On time", 
+			"With high fives all around", 
+			"Fashionably late"
 		], 
-		"correctAnswer":1,
-		"correctMessage":"Right! Good job!", 
-		"incorrectMessage":"Nope, not right!", 
-		"imageURL":""
+		"correctAnswer":0,
+		"correctMessage":"Right! Good job! Although some of our meetings might start with high fives all around, the norm is actually that they start on time.", 
+		"incorrectMessage":"Nope, not right! Although some of our meetings might start with high fives all around, the norm is actually that they start on time.", 
+		"imageURL":"/images/image2.jpg"
 	}
 ]}
