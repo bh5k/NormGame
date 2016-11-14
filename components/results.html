@@ -1,8 +1,18 @@
 <div class="glass">
 	<h1>You got {{$ctrl.score}}/{{$ctrl.numQuestions}} right!</h1>
 	<p>{{$ctrl.message}}
-	Check out the <a target="_blank" href="/CompanyNormsPoster.pdf">full list of norms</a>!</p>
+	Be sure to check out the <a target="_blank" href="/CompanyNormsPoster.pdf">full list of norms</a>!</p>
 	<p>Like the photos? Take a look at <a target="_blank" href="https://unsplash.com/">Unsplash</a> for the originals.</p>
+	<h2 style="margin-top: 40px;">Want to take credit?</h2>
+	<p>Submit your STG email address and we'll give you a high five next time we see you.</p>
+	<form class="row">
+		<div class="col-sm-9">
+			<input type="email" ng-model="$ctrl.email" placeholder="first.last@stgconsulting.com" required class="form-control">
+		</div>
+		<div class="col-sm-3">
+			<input type="submit" ng-click="$ctrl.submit()" class="btn blue" value="{{$ctrl.submitText}}">
+		</div>
+	</form>
 </div>
 
 <img src="/images/camera.svg" ng-click="$ctrl.modal=true"  class="camera" />

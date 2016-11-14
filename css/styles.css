@@ -107,6 +107,9 @@ results {
     color: #2ecc71; }
   .glass .incorrect {
     color: #e74c3c; }
+  .glass .form-control {
+    height: 39px;
+    text-align: center; }
 
 .card {
   margin: 15px 0;

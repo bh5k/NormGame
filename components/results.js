@@ -1,14 +1,25 @@
-function resultsController($rootScope, $location) {
-	if($rootScope.score == null)
-		$location.path("/results");
+function resultsController($rootScope, $location, $http) {
+	if(!isFinite($rootScope.score)) {
+		$location.path("/");
+	}
 	var ctrl = this;
 
 	ctrl.score = $rootScope.score;
 	ctrl.numQuestions = $rootScope.numQuestions;
+	ctrl.submitText = "Submit";
 	if(ctrl.score > 8){
 		ctrl.message = "Nicely done! You really know your norms!";
 	} else {
 		ctrl.message = "Could have been better. Maybe you should brush up on your norms?";
+	}
+
+	ctrl.submit = function(){
+		if(ctrl.submitText == "Submit") {
+			$http.post("http://localhost:8888/api.php", [ctrl.email, ctrl.score])
+				.then(function(response){
+					ctrl.submitText = "Got it!";
+				});
+		}
 	}
 }
 
