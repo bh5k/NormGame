@@ -4,7 +4,7 @@ function slideController($scope, $http, $location, $rootScope) {
 	var answered = false;
 	ctrl.count = 0;
 
-	$http.get("/questions.json")
+	$http.get("questions.json")
 		.then(function(response){
 			questions = response.data.questions;
 			$rootScope.numQuestions = questions.length;
@@ -40,7 +40,7 @@ function slideController($scope, $http, $location, $rootScope) {
 		if(questions[ctrl.count] != null){
 			newQuestion();
 		} else {
-			$location.path("/results");
+			$location.path("results");
 		}
 	};
 
@@ -56,7 +56,7 @@ function slideController($scope, $http, $location, $rootScope) {
 }
 
 angular.module('normGame').component('slide', {
-	templateUrl: '/components/slide.html', 
+	templateUrl: 'components/slide.html', 
 	controller: slideController, 
 	bindings: {
 		info: '<', 

@@ -1,9 +1,11 @@
 <?php
 
-$host = "23.91.70.152";
-$user = "luminou2_poller";
-$pass = "stgPOLL@!";
-$db = "luminou2_normquiz";
+$urlpass = "";
+
+$host = "";
+$user = "";
+$pass = "";
+$db = "";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
@@ -26,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 } else if($_SERVER["REQUEST_METHOD"] == "GET") {
 
-	if($_GET["pass"] != "jordan") {
+	if($_GET["pass"] != $urlpass) {
 		die("Access denied.");
 	}
 

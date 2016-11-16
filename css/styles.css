@@ -58,11 +58,11 @@ welcome, results {
   position: relative; }
 
 welcome {
-  background: url("/images/welcome.jpg") center;
+  background: url("../images/welcome.jpg") center;
   background-size: cover; }
 
 results {
-  background: url("/images/results.jpg") center;
+  background: url("../images/results.jpg") center;
   background-size: cover; }
 
 .slide {

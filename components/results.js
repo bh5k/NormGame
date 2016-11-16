@@ -1,6 +1,6 @@
 function resultsController($rootScope, $location, $http) {
 	if(!isFinite($rootScope.score)) {
-		$location.path("/");
+		$location.path("index.html");
 	}
 	var ctrl = this;
 
@@ -15,7 +15,7 @@ function resultsController($rootScope, $location, $http) {
 
 	ctrl.submit = function(){
 		if(ctrl.submitText == "Submit") {
-			$http.post("http://localhost:8888/api.php", [ctrl.email, ctrl.score])
+			$http.post("api.php", [ctrl.email, ctrl.score])
 				.then(function(response){
 					ctrl.submitText = "Got it!";
 				});
@@ -24,7 +24,7 @@ function resultsController($rootScope, $location, $http) {
 }
 
 angular.module('normGame').component('results', {
-	templateUrl: '/components/results.html', 
+	templateUrl: 'components/results.html', 
 	controller: resultsController, 
 	bindings: {
 	}
